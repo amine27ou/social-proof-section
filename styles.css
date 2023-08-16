@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.col{
+    flex-basis: 50%;
+}
+.row .col:nth-child(1) h1{
+    color: hsl(300, 43%, 22%);
+    font-weight: bold;
+}
+.row .col:nth-child(1) p{
+    color: hsl(303, 10%, 53%);
+}
+.rating{
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 7px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+}
+.row{
+    margin: 7% 4%;
+}
+.row .col .rating:nth-child(3){
+    margin: 2% 20%;
+}
+.row .col .rating:nth-child(2){
+    margin: 2% 12%;
+}
+.row .col .rating:nth-child(1){
+    margin: 2% 1%;
+}
+.row .col:nth-child(2) .rating p{
+    color: hsl(300, 43%, 22%);
+    font-weight: bold;
+    font-size: 15px;
+}
+.card{
+    padding: 20px;
+    background-color: hsl(300, 43%, 22%);
+    width: 320px;
+    border-radius: 7px;
+}
+.profile-section{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0 0 20px 0;
+}
+.profile-section .profile-pic img{
+    border-radius: 50%;
+    width: 50px;
+}
+.profile-section .username h3{
+    color: white;
+}
+.profile-section .username p{
+    color: hsl(333, 80%, 67%);
+}
+.card .message p{
+    color: white;
+}
+.container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    position: relative;
+}
+.container .card {
+    position: relative;
+  }
+
+  .container .card:nth-child(1) {
+    top: 0;
+  }
+
+  .container .card:nth-child(2) {
+    top: 20px;
+  }
+
+  .container .card:nth-child(3) {
+    top: 40px; 
+  }
+@media(max-width:728px){
+    .row{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 2% 10% ;
+    }
+    .row .col .rating:nth-child(3){
+        margin: 2% 0%;
+    }
+    .row .col .rating:nth-child(2){
+        margin: 3% 0%;
+    }
+    .row .col .rating:nth-child(1){
+        margin: 3% 0%;
+    }
+    .container{
+        flex-direction: column;
+        padding: 5% 0;
+    }
+    .container .card{
+        width: 270px;
+        flex-grow: 1;
+    }
+}
